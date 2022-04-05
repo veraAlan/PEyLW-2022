@@ -3,99 +3,41 @@ body {
     background-image: url("../img/background.svg");
 }
 
-h1,
-h2,
-h3,
-.maintext {
+.upper-left {
+    text-align: left;
+    float: left;
+    width: 30vw;
+}
+
+.upper-right {
     font-family: "Arial";
     color: white;
 }
 
-em {
-    font-weight: bold;
+pre,
+h1,
+h2,
+.main-text {
+    font-family: "Arial";
+    color: white;
+    font-size: 1.7vw;
 }
 
-tr {
-    background-image: url("../img/background.svg");
+.body-text {
+    margin-top: 2vw;
+    clear: both;
+    font-size: 1.7vw;
 }
 
-td {
-    font-size: 1.75vw;
-    padding: 0.5em;
-    vertical-align: top;
+h1,
+h2 {
+    color: white;
+    font-size: 2vw;
 }
 
-pre {
-    font-family: "Arial", Courier;
-    flex-grow: 1;
-}
-
-a {
-    color: rgb(199, 241, 253);
-}
-
-li {
-    font-size: 1.75vw;
-    padding: 0.5em;
-    vertical-align: top;
-}
-
-.left-cell {
-    text-align: left;
-    width: 20%;
-}
-
-.foto {
-    width: 90%;
-    height: auto;
+.photo {
+    width: 28vw;
     border-radius: 50%;
     border: 3px outset rgba(54, 54, 139, 0.87);
     box-shadow: 0 0 5px #000;
-}
-
-td.content {
-    color: white;
-    padding-left: 4em;
-    padding-right: 4em;
-}
-
-input[type=text],
-input[type=email],
-select {
-    font-size: 1.75vw;
-    width: 100%;
-    padding: 8px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #30498f;
-    color: white;
-    padding: 14px 0px;
-    margin: 8px 0;
-    display: inline-block;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    font-size: 0.85em;
-    background-color: #30498f;
-}
-
-textarea {
-    height: 8em;
-    font-size: 1.75vw;
-    width: 100%;
-    padding: 8px 0px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
