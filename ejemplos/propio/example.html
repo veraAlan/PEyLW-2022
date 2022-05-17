@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <link rel="stylesheet" href="./example.css" type="text/css">
+</head>
+
+<body>
+    <h1>Ejemplo Parrafo</h1>
+    <p>
+        <em>Lorem ipsum dolor sit amet</em>, <i>consectetur</i> adipisicing elit. <tt>Accusamus, aliquam, asperiores, atque, autem,</tt> consequuntur cumque doloremque dolores dolorum eaque eius enim error esse et eveniet facilis fugiat harum lilo impedit
+        ipsa ipsum itaque iure laboriosam <strong>libero magni molestias nam natus necessitatibus neque nihli nostrum</strong> numquam obcaecati <samp>officia omnis optio pariatur</samp> <code>perferendis perspiciatis placeat quae quam quas quia quis quos ratione repellat
+        repudiandae</code>
+        <strike>sapiente sed sequi simliique sint</strike> soluta sunt temporibus tenetur totam unde velit <small>vero</small> <big>voluptas</big> <sub>voluptates</sub> <u>voluptatum</u>.
+    </p>
+    <p>
+        <var>Lorem, ipsum dolor sit amet</var> consectetur adipisicing elit. <cite>Voluptates corrupti quo cupiditate</cite> quas adipisci doloremque quod, doloribus quidem, quaerat blanditiis facilis hic nulla? Suscipit, aut. Hic laudantium in beatae,
+        eos unde <dfn>provident omnis quasi necessitatibus,</dfn> perspiciatis fugiat rem libero natus magnam a, soluta eligendi itaque ipsum ducimus! Expedita, obcaecati dolorum!
+    </p>
+
+    <h3>Basic Tags</h3>
+    <u><h4>Text</h4></u>
+    <ol>
+        <li><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> : HTML Heading</li>
+        <li><strong>&lt;p&gt;</strong> : Pragraph</li>
+        <li><strong>&lt;pre&gt;</strong> : Preformatted text</li>
+        <li><strong>&lt;ul&gt;</strong> and <strong>&lt;ol&gt;</strong> : Lists
+            <ul>
+                <li><strong>&lt;li&gt;</strong> : List item</li>
+            </ul>
+        </li>
+        <li><strong>&lt;dl&gt;</strong> : Glossary
+            <ul>
+                <li><strong>&lt;dt&gt;</strong>: Term</li>
+                <ul>
+                    <li><strong>&lt;dd&gt;</strong> : Definition</li>
+                </ul>
+            </ul>
+        </li>
+        </ul>
+        <li><strong>&lt;a href="" or target="target="_blank|_self|_parent|_top nombre"&gt;</strong> : Hypertext</li>
+    </ol>
+    <u><h4>Visual</h4></u>
+    <ol>
+        <li><strong>&lt;img src="" alt=""&gt;</strong> : Image tag</li>
+        <li><strong>&lt;hr&gt;</strong> : Horizontal rule</li>
+        <li><strong>&lt;table&gt;</strong> : Line break</li>
+        <ul>
+            <li><strong>&lt;tr&gt;</strong> : Table row</li>
+            <li><strong>&lt;td rowspan=""&gt;</strong> : Table data</li>
+            <li><strong>&lt;th colspan=""&gt;</strong> : Header cell</li>
+        </ul>
+        <br>
+        <table>
+            <caption>Table Example</caption>
+            <tr>
+                <td> Columna1 de la fila 1</td>
+                <td> Columna2 de la fila 1</td>
+            </tr>
+            <tr>
+                <td NOWRAP> Columna1 de la fila 2</td>
+                <td> Columna2 de la fila 2</td>
+            </tr>
+        </table>
+        <li><strong>&lt;iframe&gt;</strong> : </li>
+    </ol>
+    <u><h4>Specials</h4></u>
+    <ol>
+        <li><strong>&lt;script&gt;</strong> : Use script inside HTML doc.</li>
+        <li><strong>&lt;form&gt;</strong> : Form</li>
+        <ul>
+            <li><strong>&lt;input type="text" name="" value="" /&gt;</strong></li>
+            <li><strong>&lt;input type="password" name="" value="" /&gt;</strong></li>
+            <li><strong>&lt;input type="radio" name="" value="" /&gt;</strong></li>
+            <li><strong>&lt;input type="checkbox" name="" value="" /&gt;</strong></li>
+            <li><strong>&lt;input type="image" name="" value="" /&gt;</strong></li>
+            <li><strong>&lt;input type="reset" /&gt;</strong></li>
+            <li><strong>&lt;input type="button" value="" /&gt;</strong></li>
+        </ul>
+        <li><strong>&lt;textarea name="" rows="" cols=""&gt;</strong> : Multi line text.</li>
+        <li><strong>&lt;select name=""&gt;</strong> : Dropdown menu.</li>
+    </ol>
+
+    <u><h3>Forms</h3></u>
+    <p class="def-paragraph">
+        <strong><em>Action attribute:</em></strong> <dfn>Specifies where to send the form-data when a form is submitted.</dfn>
+    </p>
+    <p class="def-paragraph">
+        <strong><em>Method attribute:</em></strong> <dfn>specifies the HTTP method to be used when submitting the form data. The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</dfn>
+    </p>
+
+    <br>
+    <h1>Example:</h1><br>
+    <h2>Contactanos...</h2>
+    <form>
+        <table>
+            <tr>
+                <td class="left-cell">Nombre:</td>
+                <td class="right-cell">
+                    <input class="full-cell" type="text" name="nombre">
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">Apellido:</td>
+                <td>
+                    <input class="full-cell" type="text" name="Apellido">
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">Email:</td>
+                <td>
+                    <input class="full-cell" type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">Asunto:</td>
+                <td>
+                    <input class="full-cell" type="text" name="asunto">
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">Carrera:</td>
+                <td>
+                    <select name="carrera">
+                            <option>-</option>
+                            <option>Tecnicatura</option>
+                            <option>Pregrado</option>
+                            <option>De Grado</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">Alumno:</td>
+                <td>
+                    <input type="radio" name="siONo" value="si"> Si
+                    <input type="radio" name="siONo" value="no"> No
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell" colspan="2">Mensaje:</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea rows="6" cols="70" placeholder="Mensaje"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="full-cell" type="submit">
+                </td>
+                <td>
+                    <input class="full-cell" type="reset" value="Borrar">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <u><h3>Special Caracters</h3></u>
+    <img src="./imgs/special-chars.png" alt="Image of special characters and their respective escape sequence" width="1000px">
+</body>
+
+</html>
