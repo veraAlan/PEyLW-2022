@@ -3,60 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./style/header.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
     <title>Mini Core Arg</title>
 </head>
 
 <body>
-
-    <!-- Navigation bar -->
-    <div class="nav-bar" id="top-bar">
-        <img id="logo" src="./resources/img/logo.png" alt="Logo">
-        <!-- Search bar -->
-        <span class="search-bar">
-            <input type="text" placeholder="Qu&eacute; queres buscar?">
-            <button type="submit"><img src="./resources/img/search-icon.png" alt="search icon" width="42px" height="42px"></button>
-        </span>
-
-        <!-- Categories dropdown menu -->
-        <a class="categories" href="javascript:void(0);" onclick="myFunction()">Categorias</a>
-
-        <!-- Dropdown categories menu -->
-
-        <!-- <span class="dropdown" href="javascript:void(0);" onclick="showCategories()">
-            <button class="categories">Categorias</button>
-            <div class="dropdown-conten">
-                <a href="#">Category 1</a>
-                <a href="#">Category 2</a>
-                <a href="#">Category 3</a>
+    <!-- Complete header -->
+    <header id="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img class="logo" src="assets/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <!-- Top part of header -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="region">
+                    <div>
+                        <a href="#">English</a>
+                        <a href="#">Español</a>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="#">Register</a>
+                    <a href="#">Login</a>
+                </div>
+                <div class="dark-mode">
+                    <a href="#">Dark Mode</a>
+                    <a href="#">Light Mode</a>
+                </div>
             </div>
-        </span> -->
-
-        <!-- Shopping Cart -->
-        <a id="cart" href="#cart" title="Carrito">
-            <img src="./resources/img/shopping-cart.png" alt="Carrito" width="44px" height="44px">
-        </a>
-    </div>
-
-    <div class="search-bar">
-        <input type="text" placeholder="Qu&eacute;  queres buscar?" href="javascript:void(0);" onkeypress="search()">
-        <button type="submit"><img src="./resources/img/search-icon.png" alt="search icon" width="44px" height="42px"></button>
-    </div>
-
-    <!-- Main content -->
-    <div class="principal-page">
-        <div class="slideshow">
-
         </div>
-        <div class="recommendations">
 
+        <!-- Mid/Search portion -->
+        <div class="mid-bar">
+            <div class="container">
+                <div class="info">
+                    <a href="#">Who are we?</a>
+                </div>
+                <div class="contact">
+                    <a href="mailto:cryssal220799@gmail.com">contact@minicoresupport.com</a>
+                </div>
+                <div class="search">
+                    <input class="search-input" type="text" placeholder="Search">
+                    <button class="search-icon">
+                        <img src="assets/img/search-icon.png" alt="search">
+                    </button>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="cart" src="assets/img/cart.png" alt="cart">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="best-products">
 
+        <!--  Low Section/Dropdown menu -->
+        <div class="bot-bar">
+            <div class="container">
+                <ul class="nav-bar">
+                    <li class="dropdown"><a href="#">Components</a>
+                        <ul class="dropdown-contents">
+                            <li><a href="#">Motherboard</a></li>
+                            <li><a href="#">CPU</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">RAM</a></li>
+                            <li><a href="#">Storage</a></li>
+                            <li><a href="#">PSU</a></li>
+                            <li><a href="#">Case</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Accessories</a>
+                        <ul class="dropdown-contents">
+                            <li><a href="#">Cables</a></li>
+                            <li><a href="#">Power Supplies</a></li>
+                            <li><a href="#">Cooling</a></li>
+                            <li><a href="#">Cases</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PC Armadas</a></li>
+                </ul>
+            </div>
         </div>
+
+    </header>
+    <div class="test-content" style="background-color: black; height: 1080px">
+
     </div>
 </body>
 
