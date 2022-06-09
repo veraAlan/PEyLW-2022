@@ -3,95 +3,147 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/header.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headers.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet " href="css/bootstrap.min.css">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="js/toggle.js"></script>
     <title>Mini Core Arg</title>
 </head>
 
 <body>
-    <!-- Complete header -->
-    <header id="header">
+    <!-- Dark hHader -->
+    <header class="p-3 bg-dark text-white">
         <!-- Logo -->
-        <div class="logo">
-            <a href="#">
-                <img class="logo" src="assets/img/logo.png" alt="logo">
-            </a>
-        </div>
-        <!-- Top part of header -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="region">
-                    <div>
-                        <a href="#">English</a>
-                        <a href="#">Español</a>
-                    </div>
-                </div>
-                <div class="login">
-                    <a href="#">Register</a>
-                    <a href="#">Login</a>
-                </div>
-                <div class="dark-mode">
-                    <a href="#">Dark Mode</a>
-                    <a href="#">Light Mode</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mid/Search portion -->
-        <div class="mid-bar">
-            <div class="container">
-                <div class="info">
-                    <a href="#">Who are we?</a>
-                </div>
-                <div class="contact">
-                    <a href="mailto:cryssal220799@gmail.com">contact@minicoresupport.com</a>
-                </div>
-                <div class="search">
-                    <input class="search-input" type="text" placeholder="Search">
-                    <button class="search-icon">
-                        <img src="assets/img/search-icon.png" alt="search">
-                    </button>
-                </div>
-                <div>
-                    <a href="#">
-                        <img class="cart" src="assets/img/cart.png" alt="cart">
-                    </a>
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!-- Logo -->
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="animate__animated animate__bounce" src="img/logo.png" alt="logo">
+                </a>
+                <!-- Info + Site Config -->
+                <ul class="nav col-9 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <li class="nav-link px-1 text-white"><img src="to-light-mode" alt="Light Mode Button"></li> -->
+                    <li><a class="nav-link px-1 text-white" href="#">Who are we?</a></li>
+                    <li><a class="nav-link px-1 text-white" href="mailto:cryssal220799@gmail.com">contact@minicore.com</a></li>
+                    <li><a class="nav-link px-1 text-white" href="#">English</a></li>
+                    <li><a class="nav-link px-1 text-white" href="#">Español</a></li>
+                    <!-- Dark mode switch -->
+                    <li class="nav-link px-1">
+                        <label class="animate_animated animate_fadeInUp animate_slower switch">
+                            <input type="checkbox">
+                            <span class="slider round" onclick="toggle()"></span>
+                        </label></li>
+                </ul>
+                <!-- Search -->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end">animate_fadeInUpas
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Register</button>
                 </div>
             </div>
         </div>
+    </header>
 
-        <!--  Low Section/Dropdown menu -->
-        <div class="bot-bar">
-            <div class="container">
-                <ul class="nav-bar">
-                    <li class="dropdown"><a href="#">Components</a>
-                        <ul class="dropdown-contents">
-                            <li><a href="#">Motherboard</a></li>
-                            <li><a href="#">CPU</a></li>
-                            <li><a href="#">GPU</a></li>
-                            <li><a href="#">RAM</a></li>
-                            <li><a href="#">Storage</a></li>
-                            <li><a href="#">PSU</a></li>
-                            <li><a href="#">Case</a></li>
-
+    <!-- Dark Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#">Components</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown">
+                            <li><a class="dropdown-item" href="#">Motherboard</a></li>
+                            <li><a class="dropdown-item" href="#">CPU</a></li>
+                            <li><a class="dropdown-item" href="#">GPU</a></li>
+                            <li><a class="dropdown-item" href="#">RAM</a></li>
+                            <li><a class="dropdown-item" href="#">Storage</a></li>
+                            <li><a class="dropdown-item" href="#">PSU</a></li>
+                            <li><a class="dropdown-item" href="#">Case</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#">Accessories</a>
-                        <ul class="dropdown-contents">
-                            <li><a href="#">Cables</a></li>
-                            <li><a href="#">Power Supplies</a></li>
-                            <li><a href="#">Cooling</a></li>
-                            <li><a href="#">Cases</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false" href="#">Accessories</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                            <li><a class="dropdown-item" href="#">Cables</a></li>
+                            <li><a class="dropdown-item" href="#">Power Supplies</a></li>
+                            <li><a class="dropdown-item" href="#">Cooling</a></li>
+                            <li><a class="dropdown-item" href="#">Cases</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">PC Armadas</a></li>
+                    <li><a class="nav-link" href="#">Pre-built PCs</a></li>
                 </ul>
             </div>
         </div>
+    </nav>
 
+    <!-- Light Header -->
+    <header class="p-3 mb-3 border-bottom">
+        <!-- Logo -->
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!-- Logo -->
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="animate__animated animate__bounce" src="img/logo.png" alt="logo">
+                </a>
+                <!-- Info + Site Config -->
+                <ul class="nav col-9 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <li class="nav-link px-1 text-white"><img src="to-light-mode" alt="Light Mode Button"></li> -->
+                    <li><a class="nav-link px-1 text-white" href="#">Who are we?</a></li>
+                    <li><a class="nav-link px-1 text-white" href="mailto:cryssal220799@gmail.com">contact@minicore.com</a></li>
+                    <li><a class="nav-link px-1 text-white" href="#">English</a></li>
+                    <li><a class="nav-link px-1 text-white" href="#">Español</a></li>
+                    <!-- Dark mode switch -->
+                    <li class="nav-link px-1">
+                        <label class="animate_animated animate_fadeInUp animate_slower switch">
+                            <input type="checkbox">
+                            <span class="slider round" onclick="toggle()"></span>
+                        </label></li>
+                </ul>
+                <!-- Search -->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Register</button>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- Ligh Nav Bar -->
+    <div class="bot-bar">
+        <div class="container">
+            <ul class="nav-bar">
+                <li class="dropdown"><a href="#">Components</a>
+                    <ul class="dropdown-contents">
+                        <li><a href="#">Motherboard</a></li>
+                        <li><a href="#">CPU</a></li>
+                        <li><a href="#">GPU</a></li>
+                        <li><a href="#">RAM</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">PSU</a></li>
+                        <li><a href="#">Case</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Accessories</a>
+                    <ul class="dropdown-contents">
+                        <li><a href="#">Cables</a></li>
+                        <li><a href="#">Power Supplies</a></li>
+                        <li><a href="#">Cooling</a></li>
+                        <li><a href="#">Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pre-built PCs</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="test-content" style="background-color: black; height: 1080px">
 
     </div>
