@@ -19,11 +19,11 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/themeToggler.js"></script>
     <script type="text/javascript" src="js/productLoader.js"></script>
-    <title></title>
+    <title onload="productTitle()"></title>
 </head>
 
 <body class="dark-theme" onload="userTheme()">
-    <!-- Dark Header -->
+    <!-- Header (Dark Default) -->
     <header class="p-3 bg-dark">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center justify-content-sm-start">
@@ -39,7 +39,7 @@
                     </li>
                     <li><a class="nav-link px-1 text-light" href="#">🇺🇸</a></li>
                     <li><a class="nav-link px-1 text-light" href="#">🇦🇷</a></li>
-                    <!-- Dark mode switch -->
+                    <!-- Theme switch -->
                     <li class="nav-link px-1">
                         <label class="animate_animated animate_fadeInUp animate_slower switch">
                             <input checked type="checkbox" class="switch-theme">
@@ -61,7 +61,7 @@
         </div>
     </header>
 
-    <!-- Dark Nav Bar -->
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-sm bg-dark">
         <div class="navbar-collapse" id="toggle-content">
             <!-- Dropdown Menu -->
