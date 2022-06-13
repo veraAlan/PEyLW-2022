@@ -5,6 +5,16 @@ body {
     background-color: #1b1327;
 }
 
+a.navbar-brand {
+    width: 70px;
+    height: 70px;
+}
+
+a.navbar-brand * {
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
+}
 
 /*-- Dark Mode Switch --*/
 
@@ -12,9 +22,6 @@ body {
 /*============= MEDIA QUERIES =============*/
 
 
-/* Devices under 768px (md) */
-
-@media (max-width: 767.98px) {}
 
 
 /* Switch toggle style change */
