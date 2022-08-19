@@ -4,8 +4,9 @@ function toggle() {
 
     { // Toggler
         /* Declaring themes */
-        var newTheme = '', currentTheme = ''
-        // If current is dark declare new as light and viceversa
+        var newTheme = '',
+            currentTheme = ''
+            // If current is dark declare new as light and viceversa
         b.classList.contains('dark-theme') ? currentTheme = 'dark' : currentTheme = 'light'
         currentTheme == 'dark' ? newTheme = 'light' : newTheme = 'dark'
 

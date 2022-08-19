@@ -1,8 +1,15 @@
-body {
+body.dark-theme {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     color: white;
     background-color: #1b1327;
+}
+
+body.light-theme {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    background-color: #ededed;
 }
 
 a.navbar-brand {
